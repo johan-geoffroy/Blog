@@ -1,0 +1,28 @@
+
+.page-404{
+    position: relative;
+    height: 100vh;
+
+    .page-error-content{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        h1{
+            text-transform: uppercase;
+            letter-spacing: 14px;
+        }
+
+        span{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            font-weight: 800;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 27rem;
+            
+        }
+    }
+}

@@ -1,0 +1,22 @@
+//style page blog
+.blog{
+    background-color: white;
+}
+.header-title-blog{
+    position: relative;
+    padding-top: 21vh;
+    h1{
+        font-size: 25vh;
+        text-transform: uppercase;
+        letter-spacing: 1vw;
+        text-align: center;
+        @media all and (max-width:480px){
+            font-size: 15vh;
+        }
+    }
+}
+
+.view-all-posts{
+    padding-top:12vh;
+    width: 100vw;
+}

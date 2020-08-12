@@ -1,0 +1,46 @@
+//style footer
+.footer-container{
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    padding: 3vw 5vw;
+    background-color: $primary-black;
+
+    .social-menu{
+        display:none;
+
+        @media all and (max-width:480px){
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .nav-link{
+            @include socialStyle;
+            color:$primary-white;
+        }
+    }
+    .footer-menu{
+        ul{
+            padding-left: 0;
+
+            li a{
+                text-decoration: none;
+                text-transform: capitalize;
+                color:$secondary-grey;
+                transition: ease-out 0.2s;
+                &:hover{
+                    color: $secondary-light-grey;
+                }
+            } 
+        }
+    }
+
+    .footer-bottom{
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 4px;
+        color:$secondary-grey;
+        font-weight: 300;
+    }
+}

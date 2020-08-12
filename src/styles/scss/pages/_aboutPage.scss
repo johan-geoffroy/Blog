@@ -1,0 +1,25 @@
+
+.page-about{
+    position: relative;
+    padding-top: 21vh;
+
+    .page-about-content{
+        padding-bottom: 5%;
+        margin: 3rem auto;
+        max-width: 600px;
+
+        .header-title-about h1{
+                padding-top:2rem;
+                padding-bottom: 2rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5vw;
+            }
+
+        p{
+            margin-top: 0;
+            margin-bottom: 1rem;
+            line-height: 2;
+            text-align: justify;
+        }
+    }
+}

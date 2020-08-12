@@ -1,0 +1,39 @@
+//import styles congi //
+///////////////////////
+
+@import './variables/colors';
+@import './root/root';
+@import './root/mixin';
+
+
+//import style layouts //
+////////////////////////
+@import './layouts/sidebar';
+@import './layouts/navbar';
+@import './layouts/footer';
+
+
+//import style Components//
+//////////////////////////
+
+@import './components/CardAhuthor';
+@import './components/CardPost';
+@import './components/OtherPostCard';
+@import './components/FeaturedPosts';
+@import './components/FormContact';
+@import './components/CookieBanner';
+
+
+//import style Pages //
+//////////////////////
+@import './pages/homePage';
+@import './pages/blogPage';
+@import './pages/templatePost';
+@import './pages/aboutPage';
+@import './pages/contactPage';
+@import './pages/creditPages';
+@import './pages/sendMessagePage';
+@import './pages/404Page';
+
+
+

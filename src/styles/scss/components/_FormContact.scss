@@ -1,0 +1,47 @@
+.page-contact 
+.page-contact-content
+.form-contact{
+    padding: 4%;
+
+
+    label{
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        color: darkgray;
+    }
+
+    .alert-error{
+        color:indianred;
+    }
+
+
+    .form-control{
+        border:none;
+        border-bottom: solid 2px #ced4da;
+        border-radius: 0;
+        transition:  ease-in-out all 0.3s;
+    
+    
+        &:focus{
+            outline: none !important;
+            box-shadow: none;
+            border-bottom:solid 2px rgb(5, 177, 192);
+        }
+
+    }
+
+    button{
+        background-color: black;
+        border-radius: 0px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-weight: 300;
+        background-color: none;
+        border-color: $primary-black;
+        box-shadow: none;
+
+        &:hover{
+            color:rgb(5, 177, 192);
+        }
+    }
+}

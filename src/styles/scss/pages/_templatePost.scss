@@ -1,0 +1,127 @@
+
+.wrapper-articles{
+    padding-top: 21vh;
+    position:relative;
+}
+
+.wrapper-articles .body-articles{
+
+    padding-bottom: 5%;
+    margin: 3rem auto;
+    width:70%;
+
+    @media all and (max-width:480px){
+        width: 95%;
+    }  
+
+        .header-post{
+            margin-bottom: 45px;
+            h1{
+                text-align: center;
+                width: 100%;
+                text-align: center;
+                font-size: 3vw;    
+
+                @media all and (max-width:480px){
+                    font-size: 33px;
+                    top:4%
+                }  
+            }
+        }
+    .gatsby-resp-image-wrapper{
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-height: 500px;
+    }
+
+    .text-post{
+        width: 100%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media all and (max-width:480px){
+            font-size: 16px;
+        }
+        
+        p{
+            font-weight: 300;
+            line-height: 1.6em;
+            text-align: justify;
+            font-size: 16px;
+            max-width: 850px;
+            padding: 0;
+            vertical-align: baseline;
+        }
+
+        .footer-post{
+            text-align: end;
+        }       
+    }
+
+
+    .line-separate{
+        border-top: solid 2px #ada2a2;
+        margin-top: 2%;
+    }
+
+    .like-post-icon{
+        position: relative;
+        .like-icon{
+            right: 0;
+            display: flex;
+            position: absolute;
+            border-color: none;
+    
+            .share-btn{
+            color:$primary-black;
+            font-size: 1.2em;
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: 0.3s ease-in-out;
+            border-radius: 50%;
+
+            @media all and (max-width:480px){
+                padding:13px;
+            }
+
+                &:hover{
+                    color: #fff;
+                    background-color: #28292a;
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.wrapper-articles .other-articles{
+    .title{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 5.5rem 1rem 5.5rem;
+
+        @media all and (max-width:480px){
+            padding: 0;
+        } 
+
+        h4{
+            font-size: 1rem;
+        }
+        .btn-back-all-posts{
+            color: $primary-black;
+        }
+
+        .col-sm-12{
+            @media all and (max-width:480px){
+                width: 50% !important;
+            } 
+        }
+    }
+}

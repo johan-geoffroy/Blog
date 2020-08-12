@@ -1,0 +1,61 @@
+html,body{
+    background-color:$primary-white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+
+    a{
+        text-decoration: none;
+    }
+
+    p{
+        font-weight: 300;
+    }
+
+    ul li{
+        list-style: none;
+    }
+
+   *{
+        &::selection{
+            background-color: rgb(5, 177, 192);
+            color:$primary-white;
+        }
+    }
+
+    #main{
+        overflow-x: hidden;
+        padding: 0;
+        height: 100%;
+    }
+
+    .row{
+        margin: 0;
+    }
+
+    .col-sm-12{
+        padding: 0;
+    }
+
+    .page-content{
+        position: relative;
+        z-index: 5;
+        background: $primary-white;
+        height: 100%;
+    }
+
+    .wrapper-content{
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .gatsby-image-wrapper
+    img{
+        object-fit: fill !important;
+    }
+

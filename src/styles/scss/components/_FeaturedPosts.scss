@@ -1,0 +1,160 @@
+//style grid card posts
+
+.view-post{
+    padding: 0;
+    
+    .effect-img{
+        position: relative;
+        overflow: hidden;
+    }
+    .img-post{
+        width: 100%;
+        height: 49vh;
+
+        @media all and (max-width:480px){
+            height: 50vh;
+        }
+    }
+    //img
+    .effect-img .img-post{
+        opacity: 0.9;
+        filter:grayscale(1) ;
+        transition: opacity 0.35s, transform 0.35s;
+        transform: translate3d(0,0,0);
+    }
+
+    .effect-img figcaption{
+        text-align: left;
+        position: absolute;
+        bottom: 21%;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 25%;
+        height: 68%;
+
+        @media all and (max-width:480px){
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.349);
+        }
+
+        @media all and (min-width:480px) and (max-width:768px){
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.349);
+        }
+
+        @media all and (min-width:769px) and (max-width:1024px){
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.349);
+        }
+
+        span {
+            padding: 11%;
+            position: absolute;
+
+            @media all and (min-width:480px) and (max-width:768px){
+                padding: 9%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            @media all and (min-width:769px) and (max-width:1024px){
+                padding:1em;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        a{
+            text-decoration: none;
+            @media all and (max-width:480px){
+                position: relative;
+                font-size: 16px;
+            }
+        }
+        a,h2,p{
+            transform: translate3d(0,40px,0);
+
+            @media all and (max-width:480px){
+                transform: translate3d(0, -13px, 0);
+            }
+            @media all and (min-width:480px) and (max-width:768px){
+                transform: translate3d(0, 30px, 0);
+            
+            }
+
+            @media all and (min-width:769px) and (max-width:1024px){
+                transform: translate3d(0, 18px, 0);
+            }
+        }
+
+        h2{
+            transition: transform 0.35s;
+        }
+        p{
+            text-overflow: ellipsis;
+        }
+        p, a{
+            color: rgba(0, 0, 0, 0.911);
+            opacity: 0;
+            transition: opacity 1s, transform 0.35s;
+
+            @media all and (max-width:480px){
+                opacity: 1;
+            }
+            @media all and (min-width:480px) and (max-width:1024px){
+                opacity: 1;
+            }
+        }
+
+        h2,P{
+            @media all and (max-width:480px){
+                color:$primary-white;
+            }
+            @media all and (min-width:480px) and (max-width:1024px){
+                color:$primary-white;
+            }
+        }
+    }
+
+    .effect-img:hover figcaption span{
+        background-color: rgba(0, 0, 0, 0.29);
+        position: absolute;
+        transition: 0.35s;
+        width: 100%;
+        height: 100%;
+    }
+    .effect-img:hover .img-post,
+    .effect-img:hover p,
+    .effect-img:hover a {
+        opacity: 1;
+        filter: grayscale(0);
+    }
+
+
+    .effect-img:hover h2,
+    .effect-img:hover p,
+    .effect-img:hover a {
+        color: $primary-white;
+        transform: translate3d(0,0,0);
+        
+        @media all and (max-width:480px){
+            transform: translate3d(0, -7px, 0);
+        }
+
+        @media all and (min-width:480px) and (max-width:1024px){
+            transform: translate3d(0, -7px, 0);
+        }
+    }
+
+    .effect-img:hover p,
+    .effect-img:hover a {
+	transition-delay: 0.05s;
+	transition-duration: 0.35s;
+    }
+
+    .small-posts{
+        .effect-img{
+            display: block;
+        }
+    }
+}

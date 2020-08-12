@@ -1,0 +1,55 @@
+//style NewCardPost compoenent
+
+.grid-cards-posts {
+    padding-bottom: 10%;
+    .wrapper {
+        @media all and (min-width: 480px) and (max-width: 1024px) {
+        padding-bottom: 15px;
+    }
+}
+
+.wrapper .card {
+    padding: 0;
+    margin-bottom: 2rem;
+    border-color: $secondary-light-grey;
+    background-color: transparent;
+    border-radius: 0;
+
+    .img-card {
+        picture img {
+            height: auto;
+        }
+    }
+
+    .card-body {
+        position: relative;
+        overflow: hidden;
+        a {
+            color: $primary-black;
+
+            span {
+                position: absolute;
+                bottom: 4px;
+                font-size: 15px;
+                font-weight: 700;
+                transform: translate(10px, 10px);
+                transition: all 0.3s;
+                opacity: 0;
+                @media all and (min-width: 320px) and (max-width: 425px) {
+                    display: none;
+                }
+            }
+
+        &:hover {
+            span {
+                transform: translate(10px, -16px);
+                opacity: 1;
+                    @media (min-width: 320px) and (max-width: 425px) {
+                            transform: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
